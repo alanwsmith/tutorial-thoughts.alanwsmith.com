@@ -1,2 +1,5 @@
 # tutorial-thoughts.alanwsmith.com
-Source code for tutorial-thoughts.alanwsmith.com
+
+Playing around with ideas for tutorails
+
+
