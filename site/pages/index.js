@@ -22,7 +22,7 @@ const some_object = { key: 'value' }
         type: 'website',
         url: 'https://tutorial-thoughts.alanwsmith.com/',
       }),
-    []
+    [setPageDetails]
   )
 
   return (

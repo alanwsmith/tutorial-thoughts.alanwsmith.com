@@ -26,7 +26,7 @@ export default function Page() {
         are part of the process and try to lessen the fear of causing them.
       </p>
       <p>
-        Notes: I&apos; I've got syntax highlighting turned off as a test for the
+        Notes: I&apos;ve got syntax highlighting turned off as a test for the
         examples. The idea is to highlight the lines that change and have that
         be the only color in the sample to draw the eye more strongly. For views
         like below, turning highlighting back on probably makes sense
