@@ -47,9 +47,7 @@ export default function Page() {
         <li>
           I&apos;ve got syntax highlighting turned off as a test for the
           examples. The idea is to highlight the lines that change and have that
-          be the only color in the sample to draw the eye more strongly. For
-          views like the examples below on this page where there are no
-          modifications, turning highlighting back on probably makes sense.
+          be the only color in the sample to draw the eye more strongly.
         </li>
         <li>
           One intentional aspect of this appraoch is that each step is at
@@ -82,7 +80,7 @@ export default function Page() {
         </li>
         <li>
           I&apos;m sure this isn&apos;t a new approach. Just another take on it.
-          If you have similar examples, please send them my way
+          If you have similar examples, please send them my way.
         </li>
         <li>
           I would also remove the style calls from the code. If styling is
@@ -98,13 +96,13 @@ export default function Page() {
           formatter in play.
         </li>
         <li>
-          The example is based on the React Router tutorail. Most of that
+          The example is based on the React Router tutorial. Most of that
           original tutorial is done in small steps, but this section threw a lot
           of code out in one shot. I mis-typed some stuff and ended up having to
-          bug hunt for a while. It was tought to triangulate on where the issue
-          was because of the number of lines that changes (19 in this case).
-          That kind of thing burns mental energy and can be a huge blow to
-          confidence. Hence the small-steps approach.
+          bug hunt for a while. It was tough to triangulate where the issue was
+          because of the number of lines that changes (19 in this case). That
+          kind of thing burns mental energy and can be a huge blow to
+          confidence. Hence this small-steps approach.
         </li>
         <li>
           You should be able to use this as a drop in replement for the{' '}
