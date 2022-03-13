@@ -17,8 +17,6 @@ export default function HeadTag({ description, image, title, type, url }) {
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@theidofalan" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:image" content={image} />
       <link
         rel="icon"
         type="image/png"
