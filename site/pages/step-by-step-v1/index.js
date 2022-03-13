@@ -11,6 +11,16 @@ export default function Page() {
           <a>Skip to the Example</a>
         </Link>
       </p>
+      <h2 className="mt-2">Preface</h2>
+      <p>
+        This is my first run at playing with tutorail design. It&apos;s a very
+        early draft. I hadn&apos;t come up with the{' '}
+        <Link href="/guidelines">
+          <a>guidelines</a>
+        </Link>{' '}
+        yet. In fact, going through this process is what helped me start getting
+        them down.
+      </p>
 
       <h2 className="mt-2">Concept And Notes</h2>
       <p>(In no particular order)</p>
@@ -89,7 +99,7 @@ export default function Page() {
           noise in the code.
         </li>
         <li>
-          Thinking more about the lenght of files, it feels like a good goal
+          Thinking more about the length of files, it feels like a good goal
           would be to make files short enough that they don&apos;t need line
           numbers. That would reduce visual noise and avoid conflicts when folks
           doing the tutorial added extra white space lines are have a different
