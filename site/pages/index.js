@@ -31,6 +31,11 @@ const some_object = { key: 'value' }
       <p>Playing with ideas for tutorial layouts and execution</p>
       <ul>
         <li>
+          <Link href="/guidelines">
+            <a>Tutorial Guidelines (Draft)</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/step-by-step-v1">
             <a>Step by Step V1</a>
           </Link>
