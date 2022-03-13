@@ -1,6 +1,6 @@
 export default function Snippet() {
   return (
-    <pre className="prism-code language-undefined code_block">
+    <pre className="prism-code language-undefined code_block text-gray-200">
       <div className="token-line code_line">
         <span className="code_line_number code_line_number_first">1</span>
         <span className="code_line_content">{`import {`}</span>
