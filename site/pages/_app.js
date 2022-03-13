@@ -4,11 +4,11 @@ import { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
   const [pageDetails, setPageDetails] = useState({
-    description: 'Another alan w. smith thing',
-    image: 'https://nextjs-starter.alanwsmith.com/og-images/main.png',
-    title: 'An Unnamed Website Of Alan',
+    description: 'Playing with ideas for coding tutorial designs',
+    image: 'https://tutorial-thoughts.alanwsmith.com/',
+    title: 'Tutorial Thoughts - Alan W. Smith',
     type: 'article',
-    url: 'https://nextjs-starter.alanwsmith.com/',
+    url: 'https://tutorial-thoughts.alanwsmith.com/',
   })
 
   return (
