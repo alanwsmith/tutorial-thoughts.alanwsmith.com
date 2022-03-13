@@ -62,6 +62,7 @@
     @apply border;
     @apply border-gray-600;
     @apply bg-black;
+    @apply text-gray-500;
   }
 
   .code_line {
@@ -84,7 +85,8 @@
     user-select: none;
     @apply pl-4;
     @apply pr-3;
-    @apply text-gray-100;
+    @apply text-gray-500;
+    background-color: #031207;
   }
 
   .code_line_number_first {
@@ -103,6 +105,19 @@
     @apply pl-4;
   }
   .line_added {
-    @apply bg-emerald-900;
+    @apply text-gray-300;
+    background-color: #021c09;
+  }
+  .added_top {
+    @apply border-t;
+    @apply border-green-700;
+    @apply pt-1;
+  }
+  .added_bottom {
+    @apply border-b;
+    @apply border-green-700;
+    @apply pb-1;
+  }
+  .stash_holder {
   }
 }

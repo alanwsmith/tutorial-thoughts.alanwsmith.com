@@ -11,6 +11,10 @@ import Snippet7 from './snippets/7'
 import Snippet8 from './snippets/8'
 import Snippet9 from './snippets/9'
 import Snippet10 from './snippets/10'
+import Snippet11 from './snippets/11'
+import Snippet12 from './snippets/12'
+import Snippet13 from './snippets/13'
+import Snippet14 from './snippets/14'
 
 export default function Page() {
   const router = useRouter()
@@ -134,13 +138,13 @@ export default function Page() {
           </li>
           <li>
             This code takes the event (TKTKTK more info on events) of which the
-            'target' is the element itself. In our case, that&apos;s the 'input'
-            tag.
+            &apos;target&apos; is the element itself. In our case, that&apos;s
+            the &apos;input&apos; tag.
           </li>
           <li>
             The `.value` captures whatever the value of the input text box is at
             the time of the event. In other words, whatever is in the input box
-            gets pulled into the 'filter' variable
+            gets pulled into the `filter` variable
           </li>
           <li>
             Still can not type in the text box. That gets fixed in the next step
@@ -166,7 +170,7 @@ export default function Page() {
           </li>
           <li>
             The change in the address cascades down into the text box via the
-            `searchParams.get("filter")` call we setup in step 5
+            `searchParams.get(&quot;filter&quot;)` call we setup in step 5
           </li>
           <li>
             If there is no value, things get emptied out by calling
@@ -186,8 +190,8 @@ export default function Page() {
         <ul>
           <li>This step makes things disappear for a bit.</li>
           <li>
-            We&apos;re adding a '.filter()' to our loop throught he 'invoices'
-            array where we look at each 'invoice' to see if it passes a test we
+            We&apos;re adding a `.filter()` to our loop throught he `invoices`
+            array where we look at each `invoice` to see if it passes a test we
             apply or not.
           </li>
           <li>
@@ -196,7 +200,7 @@ export default function Page() {
             list
           </li>
           <li>
-            We start by adding the '.filter()' in without and contents. Because
+            We start by adding the `.filter()` in without and contents. Because
             there is no test, there is nothing to pass and all the items are
             filtered out. That&apos; why nothing shows up
           </li>
@@ -213,14 +217,103 @@ export default function Page() {
         <ul>
           <li>
             Here we start to get things ready to filter proplerly by setting up
-            a 'filter' variable with the value from the URL that we pull in via
-            the 'searchParams.get()' call.
+            a `filter` variable with the value from the URL that we pull in via
+            the `searchParams.get()` call.
           </li>
           <li>
-            By using 'filter' as the parameter passed to 'searchParams.get()' we
+            By using `filter` as the parameter passed to `searchParams.get()` we
             pull that value from the query string portion of the URL (TKTKTKTK
             put in details about the query string in the earlier step)
           </li>
+        </ul>
+      ),
+    },
+    {
+      snippet: <Snippet11 />,
+      preface: (
+        <ul>
+          <li>Now we put in our first return value for the filter.</li>
+          <li>
+            This looks at the value for `filter` in the URL via the `filter`
+            variable we just set and if it&apos;s `falsy` (including undefined
+            or empty) the line returs true.
+          </li>
+          <li>
+            What this means for us is that if the URL doesn&apos;t have have a
+            filter this line will return true for every item so they all show up
+            on the page (i.e. http://localhost:3131/invoices).
+          </li>
+          <li>
+            However, if there is a filter value in the URL (e.g.
+            http://localhost:3131/invoices?filter=testing), then the line
+            doesn&apos;t return true for anything so nothing shows up.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      snippet: <Snippet12 />,
+      preface: (
+        <ul>
+          <li>Next to last step. We&apos;re almost there.</li>
+          <li>
+            We want out filter to match the name of the invoice, but we need
+            that to happen without it being case sensitive. (Otherwise, if we
+            tried to filter for `example` but our invoice name was `Excample`
+            with an uppercase `E`, it wouldn&apos;t match)
+          </li>
+          <li>
+            To deal with the case, this line makes a copy of the invoice name,
+            but mushes it down so everything is lower case. By doing the same
+            thing with our filter in the next step we get a case-insensitive
+            search.
+          </li>
+          <li>
+            All the invoices still show up if the input text box for the search
+            is empty. They also still disappear if anything is put in the text
+            input. That gets fixed in the next, and final step
+          </li>
+        </ul>
+      ),
+    },
+    {
+      snippet: <Snippet13 />,
+      preface: (
+        <ul>
+          <li>Last step</li>
+          <li>
+            Let&apos;s start with `filter.toLowerCase()`. It does the same that
+            as the previous step where it lowercases a string. (In this case,
+            it&apos;s the text coming in from the filter instead of the invoice
+            name.)
+          </li>
+          <li>
+            That lower cased value is compared against the first part of the
+            invoice name via `.startsWith`.
+          </li>
+          <li>
+            The return value isn&apos;t directly visible, but if the values
+            match, a `true` gets returned and the invoice shows up in the final
+            output
+          </li>
+          <li>
+            If the values do not match, the return value is `false` and that
+            particiual invoice gets removed from the output by the filter.
+          </li>
+          <li>
+            By using `.startsWith` if the first letters we type in the input
+            search box match the first letters of the name of the invoice we get
+            true. And becasue we added .toLowerCase() to both the `name` and the
+            `filter` the case doesn&apos;t matter
+          </li>
+        </ul>
+      ),
+    },
+    {
+      snippet: <Snippet14 />,
+      preface: (
+        <ul>
+          <li>And, that&apos;s it. Here&apos;s the final file.</li>
         </ul>
       ),
     },
