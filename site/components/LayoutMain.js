@@ -11,14 +11,18 @@ export default function LayoutMain(props) {
         type={props.pageDetails.type}
         url={props.pageDetails.url}
       />
-      <nav className="mt-6 mx-auto max-w-4xl">
+      <nav className="mt-6 mx-auto max-w-prose">
         <div className="border-b border-gray-700">
           <Link href="/">
             <a className="text-gray-500">tutorial-thoughts</a>
           </Link>{' '}
           ~{' '}
           <a href="https://www.alanwsmith.com" className="text-gray-500">
-            www
+            alanwsmith.com
+          </a>{' '}
+          ~{' '}
+          <a href="https://podcast.alanwsmith.com" className="text-gray-500">
+            podcast
           </a>{' '}
           ~{' '}
           <a href="https://links.alanwsmith.com" className="text-gray-500">
@@ -26,7 +30,7 @@ export default function LayoutMain(props) {
           </a>
         </div>
       </nav>
-      <main className="pb-16 mx-auto pt-4 max-w-4xl text-lg pr-28">
+      <main className="pb-16 mx-auto pt-4 max-w-prose pr-28">
         {props.children}
       </main>
     </>
