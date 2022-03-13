@@ -67,11 +67,33 @@ export default function Page() {
       <h2>The Guidelines</h2>
 
       <dl>
+        <dt>Define the goal</dt>
+        <dd>
+          Make a clear, one sentence goal and write it down. If it takes more
+          than one sentence, consider breaking things down into multiple smaller
+          tutorails. They can be split out like chapters in a book, but keep the
+          starting and ending points for each well defined and independent.{' '}
+          Think{' '}
+          <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">
+            separation of concerns
+          </a>
+          .
+        </dd>
+        <dt>Make sure the goal is learning</dt>
+        <dd>
+          The goal is not to get something done. The goal is to each a reader
+          how to do it. That said, they don&apos;t need to walk away an expert.
+          The goal is to move them up a run on the learning daigram. Said
+          another way, they don&apos;t necessarily have to know why they are
+          doing a thing, just that doing the thing gets the result they&apos;re
+          after.
+        </dd>
+
         <dt>Show every step</dt>
         <dd>
           Don't throw nineteen lines of code at the reader in one go with little
           more than a &quot;just do this&quot; type instruction. The goal is not
-          to get something working, the goal is to teach the reader how to do
+          to get something working. The goal is to teach the reader how to do
           the thing . Detail changes step by step so that folks who are earlier
           in their journey have the most support. Provide context and
           explication for each line.
@@ -84,17 +106,17 @@ export default function Page() {
           an empty wrapper first with nothing but the opening and closing fence
           posts. Add the content in the following steps.
         </dd>
-      </dl>
-      <ul>
-        <li>
-          Create the if/else in one shot - Not sure about this one yet, but the
-          idea is a follow on to building wrappers first. The extension here is
-          that you would build both elements of the if/else and then fill them.
-          That might not work all the time, but it&apos;s something to
-          investigate.
-        </li>
-        <li>
-          Just show me the way to do it that I&apos;m going to actually use. -
+        <dt>Create the if/else in one shot</dt>
+        <dd>
+          Not sure about this one yet, but the idea is a follow on to building
+          wrappers first. The extension here is that you would build both
+          elements of the if/else and then fill them. That might not work all
+          the time, but it&apos;s something to investigate.
+        </dd>
+        <dt>
+          Just show me the way to do it that I&apos;m going to actually use
+        </dt>
+        <dd>
           This one gets me all the time. Tutorials have a bad habbit of showing
           one way to do something then saying, &quot;but no one does it that
           way, everyone uses this shortcut&quot;. The idea behind that approach
@@ -106,64 +128,66 @@ export default function Page() {
           working with. If I run into a situation where I need to use the full
           thing I can deal with that when I get there and I&apos;ll have an
           understading in place that
-        </li>
-        <li>
-          Don&apos;t put in code you&apos;re going to remove - this is related
-          to just showing me the way I&apos;m actually going to do it. I&apos;ve
-          hit several tutorails where you put in some code only to take it out a
-          step or two later. The happy path for a learning tutorial is only to
-          add code. Show me the one way to do it. Don&apos;t make me send mental
-          energy setting things up one way only to flip to something else that I
-          have to burn more mental energy on to reaplce.
-        </li>
-        <li>
-          Pick a single path. - Don&apos;t offer multiple ways to do something.
-          For example, at the start of the React Router tutorail it says
-          &quot;Feel free to use your bundler of choice like Create React App or
-          Vite.&quot; I don&apos;t have enough information to make that choice
-          which causes a break in what I&apos;m trying to do and a lack in
-          confidence. Just pick the Happy Path and go with that. If there&apos;s
-          a large possibilty of different options being used. Pick one to start
-          with and then offer the other ones as options with &quot;if X
-          doesn&apos;t work for you our you already have Y installed, you can
-          use it instead like...&quot;
-        </li>
-        <li>
-          Default to overexplaning - folks can skim if they already know
-          what&apos;s up, but beginners can&apos;t magic the knowledge out of
-          thin air if it isn&apos;t on the page.
-        </li>
-        <li>
-          Setup the scaffold one time and get it out of the way. - For example:
-          don&apos;t put inline CSS styles or classes in tutorails that
-          aren&apos;t about CSS. Make a single .css file for the reader to copy
-          and paste at the beginning that uses elements instead of classes and
-          have them put that in place and then ignore it for the rest of the
+        </dd>
+        <dt>Don&apos;t put in code you&apos;re going to remove</dt>
+        <dd>
+          his is related to just showing me the way I&apos;m actually going to
+          do it. I&apos;ve hit several tutorails where you put in some code only
+          to take it out a step or two later. The happy path for a learning
+          tutorial is only to add code. Show me the one way to do it. Don&apos;t
+          make me send mental energy setting things up one way only to flip to
+          something else that I have to burn more mental energy on to reaplce.
+        </dd>
+        <dt>Pick a single path</dt>
+        <dd>
+          Don&apos;t offer multiple ways to do something. For example, at the
+          start of the React Router tutorail it says &quot;Feel free to use your
+          bundler of choice like Create React App or Vite.&quot; I don&apos;t
+          have enough information to make that choice which causes a break in
+          what I&apos;m trying to do and a lack in confidence. Just pick the
+          Happy Path and go with that. If there&apos;s a large possibilty of
+          different options being used. Pick one to start with and then offer
+          the other ones as options with &quot;if X doesn&apos;t work for you
+          our you already have Y installed, you can use it instead like...&quot;
+        </dd>
+        <dt>Default to overexplaning</dt>
+        <dd>
+          folks can skim if they already know what&apos;s up, but beginners
+          can&apos;t magic the knowledge out of thin air if it isn&apos;t on the
+          page.
+        </dd>
+        <dt>Setup the scaffold one time and get it out of the way</dt>
+        <dd>
+          For example: don&apos;t put inline CSS styles or classes in tutorails
+          that aren&apos;t about CSS. Make a single .css file for the reader to
+          copy and paste at the beginning that uses elements instead of classes
+          and have them put that in place and then ignore it for the rest of the
           tutorial.
-        </li>
-        <li>
-          Consider not applying any styling - For tutorials that aren&apos;t
-          focused on CSS, how much is gained by styling compared to the visual
-          and mental overhead it requried.
-        </li>
-        <li>
-          Label all the things - Evey code block should start with an indicator
-          line that eithe defines the file it&apos;s for or states that
-          it&apos;s a command for the terminal
-        </li>
-        <li>
-          Don&apos;t try to pull double duty - For example: even though a
-          Windows version and Mac version of a tutorial might be mostly the
-          same, they should be split to two separate things instead of
-          sprinkling in &quot;if you are on windows do this but if you are on
-          mac do that&quot; statements. Each one of those is noise for users of
-          both operating systems. When were learning we look closely at
-          everything and we ended up wasting energy parsing through that
-          friction because we don&apos;t know if there&apos;s something we need
-          in there or not.
-        </li>
-        <li>
-          Don&apos;t add two of the same thing at once the first time through -
+        </dd>
+        <dt>Consider not applying any styling</dt>
+        <dd>
+          For tutorials that aren&apos;t focused on CSS, how much is gained by
+          styling compared to the visual and mental overhead it requried.
+        </dd>
+        <dt>Label all the things</dt>
+        <dd>
+          Evey code block should start with an indicator line that eithe defines
+          the file it&apos;s for or states that it&apos;s a command for the
+          terminal
+        </dd>
+        <dt>Don&apos;t try to pull double duty</dt>
+        <dd>
+          For example: even though a Windows version and Mac version of a
+          tutorial might be mostly the same, they should be split to two
+          separate things instead of sprinkling in &quot;if you are on windows
+          do this but if you are on mac do that&quot; statements. Each one of
+          those is noise for users of both operating systems. When were learning
+          we look closely at everything and we ended up wasting energy parsing
+          through that friction because we don&apos;t know if there&apos;s
+          something we need in there or not.
+        </dd>
+        <dt>Don&apos;t add two of the same thing at once</dt>
+        <dd>
           For example, in the React Router tutorial the section on adding routes
           has the reader add two routes at the same time. Adding one at a time
           reduces the size of thage change and will have a more direct
@@ -171,31 +195,51 @@ export default function Page() {
           the second thing as its own step also provides a better practice type
           reenforcement since the reader will know what to expect and can map
           their new knowledge onto what they are doing.
-        </li>
-        <li>
-          Avoid syntax highlighting - (This one will probably get cut, but I
-          want to play with it more in context with the rest of the guidelines
-          to see if there is something benefit to be found.)
-        </li>
-        <li>
-          Almost always be compiling - The app should complie and run at the end
-          of every step whenever possible. When not possible, let the reader
-          know in advance.
-        </li>
-        <li>
-          Better broken than overwhelming - If it requires a bunch of code to
-          move from one working state to another with added functinality, break
-          it into smaller steps that may include ones where the app doesn&apos;t
-          compile/run or just generally errors out. Introducing those errors is
-          fine given how much time we spend looking at them. It&apos;s also
-          better to put an intentional error in front of someone so they are
-          ready for it and you can explain it than to through a bunch of code at
-          them with the highly likely result being a typo and an error message
-          they have to troubleshoot themselves without context.
-        </li>
-        <li>
-          Don&apos;t show incorrect line numbers - For example: The Adding a No
-          Match Rule section of the{' '}
+        </dd>
+        <dt>Match syntax highlighting</dt>
+        <dd>
+          An ideal design would set a sane default for code syntax highlighting
+          then allow the reader to switch to whatever theme they are using so
+          what they see in the tutorial matches what they see in their editor.
+          (This would include the ability to turn off syntax highlighting for
+          folks that are working without it.)
+        </dd>
+        <dt>Separate deletions and additions</dt>
+        <dd>
+          The goal is to avoid adding code that&apos;s later removed but there
+          will be times when that&apos;s appropriate. In those cases, make the
+          deletion of code it&apos;s own step instead of trying to show an add
+          and delete at the same time
+        </dd>
+
+        <dt>Almost always be compiling</dt>
+        <dd>
+          Whenever possilbe, the app should complie and run at the end of every
+          step. When not possible, let the reader know in advance that they are
+          going to see an error message.
+        </dd>
+        <dt>Explain the error</dt>
+        <dd>
+          When you have a step that causes an expected error break things down
+          into two parts. The first is the change that prodces the error
+          (letting the reader know it&apos;s about to happen). Then, explain the
+          error (and how to read it) in an independent follow up step.
+        </dd>
+        <dt>Better broken than overwhelming</dt>
+        <dd>
+          (TODO:combine with Explain the error) - If it requires a bunch of code
+          to move from one working state to another with added functinality,
+          break it into smaller steps that may include ones where the app
+          doesn&apos;t compile/run or just generally errors out. Introducing
+          those errors is fine given how much time we spend looking at them.
+          It&apos;s also better to put an intentional error in front of someone
+          so they are ready for it and you can explain it than to through a
+          bunch of code at them with the highly likely result being a typo and
+          an error message they have to troubleshoot themselves without context.
+        </dd>
+        <dt>Don&apos;t show incorrect line numbers</dt>
+        <dd>
+          For example: The Adding a No Match Rule section of the{' '}
           <a href="https://reactrouter.com/docs/en/v6/getting-started/tutorial#adding-a-no-match-route">
             React Router Tutorial
           </a>{' '}
@@ -207,8 +251,8 @@ export default function Page() {
             Nested Routes
           </a>{' '}
           section.
-        </li>
-      </ul>
+        </dd>
+      </dl>
     </>
   )
 }
