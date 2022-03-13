@@ -25,7 +25,10 @@
   h2 {
     @apply text-2xl;
     @apply font-bold;
-    @apply pb-2;
+    @apply mb-5;
+    @apply pt-3;
+    @apply border-b;
+    @apply border-gray-500;
   }
 
   h3 {
@@ -48,6 +51,14 @@
 
   li {
     @apply pb-3;
+  }
+
+  dt {
+    @apply font-bold;
+  }
+
+  dd {
+    @apply pb-6;
   }
 
   p {
